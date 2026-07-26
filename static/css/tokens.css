@@ -1,0 +1,71 @@
+/* =========================================================================
+   Débora Araújo dos Reis — Aromaterapia
+   Tokens de design: cores (claro/escuro), tipografia, espaçamento base.
+   ========================================================================= */
+
+:root {
+  /* -- cor: modo claro (padrão) -- */
+  --bg: #fbf8f2;
+  --surface: #ffffff;
+  --surface-2: #f3eee1;
+  --text: #2b2a25;
+  --muted: #71695c;
+  --border: #e6dfce;
+
+  --accent: #6b7f5e;        /* verde sálvia — marca, links, CTA secundário */
+  --accent-ink: #ffffff;
+  --accent-soft: #e9eee3;
+  --accent-2: #8e7fa3;      /* lavanda suave — detalhes emocionais */
+  --accent-2-soft: #efeaf3;
+  --gold: #c9a467;          /* dourado suave — aspas, selos, detalhes */
+  --gold-soft: #f5ecd9;
+  --whatsapp: #25d366;
+  --whatsapp-ink: #ffffff;
+
+  --shadow: 0 1px 2px rgba(35, 30, 20, .05), 0 6px 20px rgba(35, 30, 20, .07);
+  --shadow-hover: 0 3px 8px rgba(35, 30, 20, .09), 0 16px 36px rgba(35, 30, 20, .13);
+  --ring: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent);
+
+  --radius: 20px;
+  --radius-sm: 12px;
+  --radius-pill: 999px;
+
+  --font-serif: "Fraunces", Georgia, "Iowan Old Style", serif;
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --maxw: 1180px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) {
+    --bg: #1b1d18;
+    --surface: #232620;
+    --surface-2: #2b2e26;
+    --text: #edeae0;
+    --muted: #a8a190;
+    --border: #383b31;
+
+    --accent: #9bb08a;
+    --accent-ink: #12140f;
+    --accent-soft: #2c3226;
+    --accent-2: #b3a2c4;
+    --accent-2-soft: #2c2733;
+    --gold: #d8bc85;
+    --gold-soft: #332c1c;
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 24px rgba(0, 0, 0, .4);
+    --shadow-hover: 0 3px 10px rgba(0, 0, 0, .45), 0 18px 42px rgba(0, 0, 0, .55);
+    color-scheme: dark;
+  }
+}
+:root[data-tema="escuro"] {
+  --bg: #1b1d18; --surface: #232620; --surface-2: #2b2e26;
+  --text: #edeae0; --muted: #a8a190; --border: #383b31;
+  --accent: #9bb08a; --accent-ink: #12140f; --accent-soft: #2c3226;
+  --accent-2: #b3a2c4; --accent-2-soft: #2c2733;
+  --gold: #d8bc85; --gold-soft: #332c1c;
+  --shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 24px rgba(0,0,0,.4);
+  --shadow-hover: 0 3px 10px rgba(0,0,0,.45), 0 18px 42px rgba(0,0,0,.55);
+  color-scheme: dark;
+}
