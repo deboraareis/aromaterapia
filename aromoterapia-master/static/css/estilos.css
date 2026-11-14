@@ -278,27 +278,7 @@ ul { list-style: none; padding: 0; }
   border-radius: 6px; padding: .2rem .6rem;
 }
 
-/* ---- 9. Depoimentos ------------------------------------------------------------ */
-.grade-depoimentos {
-  display: grid; gap: clamp(1rem, 2.5vw, 1.4rem);
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-}
-.card-depoimento {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 1.6rem 1.5rem; box-shadow: var(--shadow);
-  display: flex; flex-direction: column; gap: 1rem;
-}
-.card-depoimento__aspas { font-family: var(--font-serif); font-size: 2.4rem; color: var(--gold); line-height: 1; }
-.card-depoimento p.card-depoimento__texto { color: var(--text); font-size: .95rem; font-style: italic; line-height: 1.6; }
-.card-depoimento__autor { display: flex; align-items: center; gap: .6rem; margin-top: auto; }
-.card-depoimento__inicial {
-  width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--accent-soft);
-  color: var(--accent); font-weight: 700; display: grid; place-items: center; flex: none; font-family: var(--font-serif);
-}
-.card-depoimento__nome { font-weight: 700; font-size: .88rem; color: var(--text); }
-.card-depoimento__detalhe { font-size: .78rem; color: var(--muted); }
-
-/* ---- 10. FAQ -------------------------------------------------------------------- */
+/* ---- 9. FAQ -------------------------------------------------------------------- */
 .faq__lista { display: flex; flex-direction: column; gap: .8rem; max-width: 48rem; }
 .faq__item {
   background: var(--surface); border: 1px solid var(--border);
