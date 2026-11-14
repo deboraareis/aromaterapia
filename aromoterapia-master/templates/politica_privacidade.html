@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block titulo %}Política de Privacidade — {{ site.nome }}{% endblock %}
+{% block description %}Como {{ site.nome }} coleta, usa e protege seus dados, em conformidade com a LGPD.{% endblock %}
+
+{% block conteudo %}
+<section class="pagina-simples">
+  <div class="pagina-simples__interno">
+    <h1>Política de Privacidade</h1>
+    <p>Última atualização: {{ site.data_atualizacao }}.</p>
+
+    <p>
+      Esta política explica como {{ site.nome }} trata as informações de quem visita ou
+      entra em contato através deste site, em conformidade com a Lei Geral de Proteção de
+      Dados (Lei nº 13.709/2018 — LGPD).
+    </p>
+
+    <h2>1. Quais dados coletamos</h2>
+    <p>
+      Este site é estático e não possui formulário próprio de cadastro. O contato acontece
+      diretamente pelo WhatsApp ou e-mail informados no site — nesse caso, os dados
+      eventualmente compartilhados (como nome e telefone) ficam na conversa entre você e
+      {{ site.nome }}, e não são armazenados por este site.
+    </p>
+    <p>
+      Caso o site utilize ferramentas de análise de audiência (como Google Analytics),
+      dados de navegação anônimos (páginas visitadas, tempo de permanência, dispositivo)
+      podem ser coletados por essas ferramentas — nesse caso, a política de privacidade do
+      respectivo serviço se aplica em conjunto com esta.
+    </p>
+
+    <h2>2. Finalidade do uso dos dados</h2>
+    <ul>
+      <li>Responder ao seu contato e agendar consultas;</li>
+      <li>Entender, de forma agregada e anônima, como o site é utilizado, para melhorá-lo.</li>
+    </ul>
+
+    <h2>3. Compartilhamento com terceiros</h2>
+    <p>
+      Nenhum dado pessoal fornecido em contato é vendido ou compartilhado com terceiros
+      para fins comerciais.
+    </p>
+
+    <h2>4. Seus direitos como titular dos dados</h2>
+    <p>Conforme a LGPD, você pode solicitar a qualquer momento:</p>
+    <ul>
+      <li>Confirmação de que seus dados estão sendo tratados;</li>
+      <li>Acesso, correção ou exclusão dos seus dados;</li>
+      <li>Informações sobre com quem seus dados foram compartilhados, se aplicável.</li>
+    </ul>
+    <p>
+      Para exercer esses direitos, escreva para
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+    </p>
+
+    <h2>5. Aviso sobre a natureza da prática</h2>
+    <p>
+      A aromaterapia é uma prática integrativa e complementar. As informações neste site
+      têm caráter educativo e não substituem diagnóstico, tratamento médico ou
+      psicológico.
+    </p>
+
+    <h2>6. Contato</h2>
+    <p>
+      Dúvidas sobre esta política podem ser enviadas para
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+    </p>
+  </div>
+</section>
+{% endblock %}

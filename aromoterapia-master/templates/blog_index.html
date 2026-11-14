@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block titulo %}Blog — {{ site.nome }}{% endblock %}
+{% block description %}Artigos sobre aromaterapia, óleos essenciais e bem-estar, por {{ site.nome }}.{% endblock %}
+
+{% block conteudo %}
+<section class="secao">
+  <div class="secao__interno">
+    <p class="secao__rotulo">Blog</p>
+    <h2 class="secao__titulo">Aromaterapia no dia a dia</h2>
+    <p class="secao__intro">
+      Textos sobre óleos essenciais, bem-estar e o que esperar de um acompanhamento de
+      aromaterapia.
+    </p>
+
+    {% if posts %}
+    <div class="grade-blog">
+      {% for post in posts %}
+      <a class="card-blog" href="{{ base }}/blog/{{ post.slug }}.html">
+        {% if post.capa %}<img class="card-blog__capa" src="{{ base }}/{{ post.capa }}" alt="" loading="lazy">{% endif %}
+        <div class="card-blog__corpo">
+          <span class="card-blog__data">{{ post.data_exibicao }}</span>
+          <h3>{{ post.titulo }}</h3>
+          <p>{{ post.resumo }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="aviso">
+      <span class="aviso__icone" aria-hidden="true">🌿</span>
+      <span>Os primeiros artigos estão a caminho. Volte em breve!</span>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

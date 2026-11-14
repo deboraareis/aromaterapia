@@ -1,0 +1,41 @@
+<header class="topo">
+  <div class="topo__interno">
+    <a class="marca" href="{{ base }}/index.html#inicio" aria-label="Início">
+      <img class="marca__avatar" src="{{ base }}/static/img/debora-avatar-mini.jpg" alt="" width="40" height="40">
+      <span class="marca__texto">
+        {{ site.nome }}
+        <span class="marca__sub">{{ site.slogan }}</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="{{ base }}/index.html#sobre">Sobre</a>
+      <a href="{{ base }}/index.html#aromaterapia">Aromaterapia</a>
+      <a href="{{ base }}/index.html#servicos">Serviços</a>
+      <a href="{{ base }}/index.html#depoimentos">Depoimentos</a>
+      <a href="{{ base }}/index.html#faq">FAQ</a>
+      <a href="{{ base }}/blog/index.html">Blog</a>
+    </nav>
+
+    <div class="topo__acoes">
+      <button class="btn-tema" type="button" id="btnTema" title="Alternar tema" aria-label="Alternar tema claro/escuro">
+        <span class="ico" aria-hidden="true">◐</span>
+        <span class="rot" id="btnTemaTexto">Automático</span>
+      </button>
+      <a class="botao botao--primario topo__cta" href="{{ site.whatsapp_link }}" target="_blank" rel="noopener">Agendar</a>
+      <button class="btn-menu" type="button" id="btnMenu" aria-expanded="false" aria-controls="navMovel" aria-label="Abrir menu">
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-movel" id="navMovel" aria-label="Navegação móvel">
+    <a href="{{ base }}/index.html#sobre">Sobre</a>
+    <a href="{{ base }}/index.html#aromaterapia">Aromaterapia</a>
+    <a href="{{ base }}/index.html#servicos">Serviços</a>
+    <a href="{{ base }}/index.html#depoimentos">Depoimentos</a>
+    <a href="{{ base }}/index.html#faq">FAQ</a>
+    <a href="{{ base }}/blog/index.html">Blog</a>
+    <a href="{{ base }}/index.html#contato">Contato</a>
+  </nav>
+</header>
